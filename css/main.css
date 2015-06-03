@@ -11,6 +11,10 @@ html, body, h1, div, p, dl, dt, dd, form {
 #header-area dd,
 #global-nav-area ul,
 #global-nav-area li,
+#promo-box ul,
+#promo-box li,
+#announce-box ul,
+#announce-box li,
 #operation-site-entry-area ul,
 #operation-site-entry-area li,
 #operation-site-entry-area dl,
@@ -90,10 +94,82 @@ input.image {
 }
 
 #style-switcher ul li {
-    float: left;
-    margin-right: 2px;
+	float: left;
+	margin-right: 2px;
 }
 
+a.switcher_btn:hover{
+	opacity: 1;
+}
+
+a.switcher_btn:active{
+	opacity: 0.5;
+}
+
+#global-nav-area{
+	height:35px;
+	width:748px;
+	box-shadow: 2px 4px 10px -3px #888;
+}
+
+#global-nav li{
+	float:left;
+}
+
+#global-nav li a:hover{
+	pacity: 0.5;
+}
+
+.banner{
+	width: 745px;
+	height:221px;
+	margin-left:2px;
+	background-image: url("../img/banner.png");
+	-moz-box-shadow: 0px 20px 25px #E5E4E4;
+	-webkit-box-shadow: 0px 20px 25px #E5E4E4;
+	box-shadow: 0px 20px 25px #E5E4E4;
+	margin-top: 5px;
+}
+#promo-box{
+	height: 130px;
+	width: 747px;
+	border: 1px solid #888;
+	border-radius: 8px;
+}
+#promo-box li{
+	float:left;
+}
+
+#promo-box li img{
+	border-bottom: 1px solid #888;
+}
+
+#promo-box li .arrow.active{
+	background: transparent url("../img/arrow.png") no-repeat scroll 0px 0px;
+	position: absolute;
+	margin-top: -5px;
+	margin-left: 90px;
+	z-index: 5;
+	width: 20px;
+	height: 10px;
+}
+
+#promo-box li a:hover{
+	opacity: 0.5;
+}
+
+.content-table{
+	margin-left: 10px;
+	margin-top: 50px;
+	line-height: 10px;
+}
+
+.content-table h3{
+	color: red;
+}
+.content-table .black{
+	color: black;
+}
 .container{
 	width: 940px;
 	margin: 0px auto;
@@ -104,4 +180,133 @@ input.image {
 	position: relative;
 	width: 748px;
 	min-height: 71px;
+}
+
+#announce-box{
+	height: 100px;
+	width: 747px;
+	border: 1px solid red;
+	border-radius: 8px;
+	margin-top: 30px;
+}
+#announce-box li{
+	float:left;
+}
+
+#announce-box hr{
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	width: 98%;
+}
+
+#announce-box .title{
+	margin: 5px 0px 0px 10px;
+}
+
+#announce-box .item{
+	font-size:13px;
+	line-height: 250%;
+	margin-left: 10px;
+}
+
+#announce-box .item a{
+	margin-left:20px;
+}
+.rate-box >*{
+	float:left;
+}
+.col-1 >hr,
+.col-2 >hr{
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgb(255, 5, 2);
+	border-bottom: 1px solid rgba(253, 255, 255, 0.66);
+}
+.col-1 {
+	width: 490px;
+}
+
+.title-bar >a,
+.title-bar >a{
+	float: right;
+	margin-top: -30px;
+	font-size:13px;
+}
+
+.col-1 .title-bar,
+.col-2 .title-bar{
+	margin-bottom: -8px;
+}
+.col-1 .item,
+.col-2 .item{
+	width: 240px;
+	height: 125px;
+}
+.col-2 {
+	width: 240px;
+	margin-left:20px;
+}
+.col-2 .item .icon,
+.col-1 .item .icon{
+	height:38px;
+	margin-left:5px;
+	margin-top:5px;
+}
+.item .item-title{
+	font-size: 18px;
+	position: absolute;
+	margin-top: 5px;
+	text-decoration: None;
+	color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.col-1 .item,
+.col-2 .item{
+	border: solid 1px #CCC;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 2px #CCC;
+	-moz-box-shadow:  0px 0px 2px #CCC;
+	box-shadow:  0px 0px 2px #CCC;
+}
+.col-1 .item .rate-label,
+.col-2 .item .rate-label{
+	padding: 8px;
+	background-color: rgb(233, 217, 178);
+	width: 45px;
+	border-radius: 5px 0px 0px 5px;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.col-1 .item .rate-value,
+.col-2 .item .rate-value{
+	padding: 8px;
+	background-color: #F4EBD3;
+	border-radius: 0px 5px 5px 0px;
+	margin-right: 5px;
+	font-size: 12px;
+	float: right;
+	margin-top: -31px;
+	width: 150px;
+}
+
+.col-1 .item .updated-date,
+.col-2 .item .updated-date{
+	float: right;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.col-1 .item .smt,
+.col-2 .item .smt{
+	float: right;
+	margin-top: 30px;
+	font-size: 12px;
+	margin-right: -72px;
+}
+.red{
+	color: red;
 }
