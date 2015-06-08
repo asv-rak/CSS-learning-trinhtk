@@ -19,6 +19,8 @@ html, body, h1, div, p, dl, dt, dd, form {
 .transfer-box li,
 .util-box ul,
 .util-box li,
+.quick-link ul,
+.quick-link li,
 #operation-site-entry-area ul,
 #operation-site-entry-area li,
 #operation-site-entry-area dl,
@@ -522,7 +524,7 @@ a.switcher_btn:active{
 }
 
 .right-col .row-2 .title{
-	padding: 11px;
+	padding: 11px 11px 11px 17px;
 	background: #FFF;
 	background-image: -webkit-linear-gradient(top, #f19b5c, #cf2817);
 	background-image: -moz-linear-gradient(top, #f19b5c, #cf2817);
@@ -583,6 +585,8 @@ a.switcher_btn:active{
 	margin-top: 10px;
 	font-size: 10px;
 }
+#link hr,
+.footer hr,
 .right-col .row-6 hr,
 .right-col .row-5 hr,
 .right-col .row-4 hr{
@@ -647,4 +651,98 @@ a.switcher_btn:active{
 
 .right-col .row-7 a{
 	text-decoration: none;
+}
+
+.footer{
+	margin-top:110px;
+}
+
+.footer .list-1,
+.footer .list-2,
+.footer .list-3,
+.footer .list-4,
+.footer .list-5{
+	float:left;
+	width: 145px;
+	list-style: outside none none;
+	margin: 0px 0px 0px 15px;
+	padding: 0px 35px 0px 0px;
+}
+
+.footer .list-5{
+	padding: 0px;
+}
+
+.footer .list-1 hr,
+.footer .list-2 hr,
+.footer .list-3 hr,
+.footer .list-4 hr,
+.footer .list-5 hr{
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-left:-15px;
+}
+
+.footer .list-1 li:before ,
+.footer .list-2 li:before ,
+.footer .list-3 li:before ,
+.footer .list-4 li:before ,
+.footer .list-5 li:before {
+	content: "";
+	border-color: transparent black;
+	border-style: solid;
+	border-width: 5px 0px 4px 5px;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 0.9em;
+	position: relative;
+}
+
+.footer .top-link{
+	float: right;
+	margin-top: -30px;
+}
+.footer a{
+	text-decoration: none;
+	color: #666666;
+	font-size: 12px;
+}
+#link {
+	margin-top:365px;
+}
+
+#link .quick-link a{
+	text-decoration: none;
+	color: #666666;
+	font-size: 12px;
+}
+#link .quick-link li{
+	float: left;
+	margin: 0px 0px 0px 25px;
+}
+#link .quick-link li:before{
+	content: "";
+	border-color: transparent black;
+	border-style: solid;
+	border-width: 5px 0px 4px 5px;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 0.7em;
+	position: relative;
+}
+
+#link .quick-link{
+	margin-left: -50px;
+	margin-top: -10px;
+}
+
+.copyright {
+	float:right;
+	font-size: 12px;
 }
